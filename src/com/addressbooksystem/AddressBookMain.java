@@ -1,8 +1,10 @@
 package com.addressbooksystem;
 
 /*
- program to create Address Book with person's details
- like first_Name,last_Name,city,state,zip,phoneNumber
+ @description: class to add multiple person,s
+ details
+ @parameters: defining a addNewPerson method to
+ create new person details
  */
 import java.util.*;
 
