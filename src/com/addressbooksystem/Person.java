@@ -6,11 +6,10 @@ import java.io.*;
 public class Person{
 
 	// Class-variable declarations
-	private String firstName, lastName, city, state, address, email;
-	private int zipCode;
+	private String firstName, lastName, city, state, address, email,zipCode;
 	private long phoneNumber;
 
-	public Person(String firstName, String lastName , String city, String state, String address, String email, int zipCode, long phoneNumber){
+	public Person(String firstName, String lastName , String city, String state, String address, String email, String zipCode, long phoneNumber){
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -42,7 +41,7 @@ public class Person{
 	public void setemail(String email){
 		this.email = email;
 	}
-	public void setZipCode(int zipCode){
+	public void setZipCode(String zipCode){
 		this.zipCode = zipCode;
 	}
 	public void setPhoneNumber(long phoneNumber){
@@ -68,7 +67,7 @@ public class Person{
 	public String getemail(){
 		return this.email;
 	}
-	public int getZipCode(){
+	public String getZipCode(){
 		return this.zipCode;
 	}
 	public long getPhoneNumber(){
@@ -76,16 +75,15 @@ public class Person{
 	}
 	public void showPersonsDetails(){
 
-		System.out.println("\n+" + new String(new char[54]).replace('\0', '-')+"+");
-		System.out.format("| %20s: %30s |\n","First name", this.getfirstName());
-		System.out.format("| %20s: %30s |\n","Last  name", this.getlastName());
-		System.out.format("| %20s: %30s |\n","Phone Number", this.getPhoneNumber());
-		System.out.format("| %20s: %30s |\n","City", this.getCity());
-		System.out.format("| %20s: %30s |\n","State", this.getState());
-		System.out.format("| %20s: %30s |\n","Address", this.getAddress());
-		System.out.format("| %20s: %30s |\n","Address", this.getemail());
-		System.out.format("| %20s: %30s |\n","Zip Code", this.getZipCode());
-		System.out.println("+" + new String(new char[54]).replace('\0', '-')+"+");
+		
+		System.out.println("First name :: "+ this.getfirstName());
+		System.out.println("Last  name :: "+ this.getlastName());
+		System.out.println("Phone Number :: "+ this.getPhoneNumber());
+		System.out.println("City :: " + this.getCity());
+		System.out.println("State :: "+ this.getState());
+		System.out.println("Address :: "+ this.getAddress());
+		System.out.println("Address :: "+ this.getemail());
+		System.out.println("Zip Code :: "+ this.getZipCode());
 	}
 	
 
